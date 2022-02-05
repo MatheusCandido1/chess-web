@@ -23,6 +23,7 @@
         ],
         "react/react-in-jsx-scope": "off",
         "react/jsx-one-expression-per-line": "off",
-        "import/prefer-default-export": "off"
+        "import/prefer-default-export": "off",
+        "no-promise-executor-return": "off"
     }
 }
