@@ -24,6 +24,8 @@
         "react/react-in-jsx-scope": "off",
         "react/jsx-one-expression-per-line": "off",
         "import/prefer-default-export": "off",
-        "no-promise-executor-return": "off"
+        "no-promise-executor-return": "off",
+        "react/function-component-definition": "off",
+        "react/forbid-prop-types": "off"
     }
 }
