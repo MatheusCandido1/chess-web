@@ -69,7 +69,7 @@ export default function NextMatchCard() {
               </div>
             </Score>
             <Schedule>
-              <span className="tag is-info">09/02/2022 - 20:45 (BRT)</span>
+              <span className="tag is-info">09/02/2022 - 00:00 (BRT)</span>
             </Schedule>
             <footer className="field is-grouped">
               <a target="_blank" href="https://lichess.org/Am8n1GWW" rel="noreferrer">
