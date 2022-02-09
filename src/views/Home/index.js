@@ -2,7 +2,6 @@ import { Container, FirstRow, History } from './style';
 
 import NextMatchCard from '../../components/Home/NextMatchCard';
 import ScoreboardCard from '../../components/Home/ScoreboardCard';
-import MatchCard from '../../components/Home/MatchCard';
 
 export default function Home() {
   return (
@@ -21,12 +20,13 @@ export default function Home() {
           </header>
           <div className="card-content">
             <div className="content">
-              <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-                <MatchCard />
-                <MatchCard />
-                <MatchCard />
-                <MatchCard />
+              <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+
+                <div className="notification">
+                  Nenhuma partida foi jogada entre os jogadores.
+                </div>
               </div>
+
             </div>
           </div>
         </div>

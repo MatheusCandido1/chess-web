@@ -6,6 +6,15 @@ export const Container = styled.section`
   .card {
     height: 100%;
   }
+
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+  }
 `;
 
 export default function ScoreboardCard() {
@@ -32,22 +41,22 @@ export default function ScoreboardCard() {
               <tr>
                 <th>1</th>
                 <td>Candin</td>
-                <td>38</td>
-                <td>23</td>
-                <td>12</td>
-                <td>3</td>
-                <td>68</td>
-                <td>36</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
               </tr>
               <tr>
                 <th>2</th>
                 <td>Max</td>
-                <td>38</td>
-                <td>23</td>
-                <td>12</td>
-                <td>3</td>
-                <td>68</td>
-                <td>36</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
               </tr>
             </tbody>
           </table>
