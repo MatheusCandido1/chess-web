@@ -15,6 +15,11 @@ const Content = styled.div`
   align-items: center;
   justify-content: center;
 
+  a {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
   button {
     margin-top: 1rem;
     width: 100%;
@@ -67,15 +72,17 @@ export default function NextMatchCard() {
               <span className="tag is-info">09/02/2022 - 20:45 (BRT)</span>
             </Schedule>
             <footer className="field is-grouped">
-              <button
-                type="button"
-                className="button is-info"
-              >
-                <span>Jogar</span>
-                <span className="icon is-small">
-                  <i className="fas fa-chess" />
-                </span>
-              </button>
+              <a target="_blank" href="https://lichess.org/Am8n1GWW" rel="noreferrer">
+                <button
+                  type="button"
+                  className="button is-info"
+                >
+                  <span>Jogar</span>
+                  <span className="icon is-small">
+                    <i className="fas fa-chess" />
+                  </span>
+                </button>
+              </a>
             </footer>
           </Content>
         </div>
