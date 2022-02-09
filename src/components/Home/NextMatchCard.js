@@ -64,7 +64,7 @@ export default function NextMatchCard() {
               </div>
             </Score>
             <Schedule>
-              <span className="tag is-info">07/02/2022 - 16:00</span>
+              <span className="tag is-info">09/02/2022 - 20:45 (BRT)</span>
             </Schedule>
             <footer className="field is-grouped">
               <button
