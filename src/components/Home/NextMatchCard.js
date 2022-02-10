@@ -1,3 +1,6 @@
+/* eslint-disable react/no-unused-prop-types */
+import propTypes from 'prop-types';
+
 import styled from 'styled-components';
 
 const Container = styled.section`
@@ -46,7 +49,7 @@ const Schedule = styled.div`
   margin-top: 1rem;
 `;
 
-export default function NextMatchCard() {
+export default function NextMatchCard({ game }) {
   return (
     <Container className="column">
       <div className="card">
@@ -55,7 +58,7 @@ export default function NextMatchCard() {
           <Content>
             <Score>
               <div>
-                <span className="subtitle is-3">Candin</span>
+                <span className="subtitle is-3">{game.blacks.name}</span>
                 <span className="tag is-black">Pretas</span>
               </div>
 
@@ -64,15 +67,15 @@ export default function NextMatchCard() {
               </div>
 
               <div>
-                <span className="subtitle is-3">Max</span>
+                <span className="subtitle is-3">{game.whites.name}</span>
                 <span className="tag is-light">Brancas</span>
               </div>
             </Score>
             <Schedule>
-              <span className="tag is-info">09/02/2022 - 00:00 (BRT)</span>
+              <span className="tag is-info">{game.schedule} (BRT)</span>
             </Schedule>
             <footer className="field is-grouped">
-              <a target="_blank" href="https://lichess.org/Am8n1GWW" rel="noreferrer">
+              <a target="_blank" href={game.play} rel="noreferrer">
                 <button
                   type="button"
                   className="button is-info"
@@ -90,3 +93,7 @@ export default function NextMatchCard() {
     </Container>
   );
 }
+
+NextMatchCard.propTypes = {
+  game: propTypes.object.isRequired,
+};
