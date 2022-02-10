@@ -2,6 +2,7 @@
 import propTypes from 'prop-types';
 
 import styled from 'styled-components';
+import Skeleton from 'react-loading-skeleton';
 
 const Container = styled.section`
   max-height: 325px;
@@ -26,11 +27,18 @@ const Content = styled.div`
   button {
     margin-top: 1rem;
     width: 100%;
+    outline: 0;
+    border: 0;
   }
 
   footer {
     width: 100%;
     gap: 1rem;
+
+    div {
+      margin-top: 2rem;
+      width: 100%;
+    }
   }
 `;
 
@@ -48,6 +56,43 @@ const Score = styled.div`
 const Schedule = styled.div`
   margin-top: 1rem;
 `;
+
+export function NextMatchCardSkeleton() {
+  return (
+    <Container className="column">
+      <div className="card">
+        <div className="card-content">
+          <div className="content" />
+          <Content>
+            <Score>
+              <div style={{ gap: '2rem' }}>
+                <Skeleton height={25} width={100} />
+                <Skeleton height={10} width={100} />
+              </div>
+
+              <div>
+                <span className="subtitle is-3"><Skeleton width={25} /></span>
+              </div>
+
+              <div style={{ gap: '2rem' }}>
+                <Skeleton height={25} width={100} />
+                <Skeleton height={10} width={100} />
+              </div>
+            </Score>
+            <Schedule>
+              <Skeleton height={25} width={150} />
+            </Schedule>
+            <footer className="field is-grouped">
+              <div>
+                <Skeleton height={35} />
+              </div>
+            </footer>
+          </Content>
+        </div>
+      </div>
+    </Container>
+  );
+}
 
 export default function NextMatchCard({ game }) {
   return (

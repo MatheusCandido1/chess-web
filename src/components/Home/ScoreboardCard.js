@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Skeleton from 'react-loading-skeleton';
 
 export const Container = styled.section`
   max-height: 325px;
@@ -16,6 +17,24 @@ export const Container = styled.section`
     max-width: 100%;
   }
 `;
+
+export function ScoreboardCardSkeleton() {
+  return (
+    <Container className="column">
+      <div className="card">
+        <div className="card-content">
+          <div className="content" />
+          <Skeleton height={35} style={{ width: '100px', marginBottom: '1rem' }} />
+          <div style={{ width: '100%', marginBottom: '1rem' }}>
+            <Skeleton height={35} style={{ marginBottom: '1rem' }} />
+            <Skeleton height={35} style={{ marginBottom: '1rem' }} />
+            <Skeleton height={35} style={{ marginBottom: '1rem' }} />
+          </div>
+        </div>
+      </div>
+    </Container>
+  );
+}
 
 export default function ScoreboardCard() {
   return (
