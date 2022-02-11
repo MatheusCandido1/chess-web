@@ -24,7 +24,9 @@ const Card = styled.section`
   section {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 0.5rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
 
