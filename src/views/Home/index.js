@@ -83,7 +83,7 @@ export default function Home() {
               </header>
               <div className="card-content">
                 <div className="content">
-                  <div style={{ display: 'flex', justifyContent: 'flex-start', flexWrap: 'wrap' }}>
+                  <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                     {
                   games && games.length > 0
                     ? (

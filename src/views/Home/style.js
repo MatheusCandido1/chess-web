@@ -25,4 +25,15 @@ export const History = styled.section`
     height: 700px;
     max-height: 1000px;
   }
+
+  .content {
+    justify-content: 'center';
+  }
+
+  @media (max-width: 500px) {
+    .content {
+      justify-content: 'flex-start';
+    }
+  }
+
 `;
