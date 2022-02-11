@@ -48,10 +48,11 @@ export default function ScoreboardCard() {
               <tr>
                 <th>Pos</th>
                 <th>Jogador</th>
-                <th>Vítorias (Brancas)</th>
+                <th>Vitórias</th>
+                <th>Vitórias (Brancas)</th>
                 <th>Derrotas (Brancas)</th>
                 <th>Empate (Brancas)</th>
-                <th>Vítorias (Pretas)</th>
+                <th>Vitórias (Pretas)</th>
                 <th>Derrotas (Pretas)</th>
                 <th>Empate (Pretas)</th>
               </tr>
@@ -60,18 +61,20 @@ export default function ScoreboardCard() {
               <tr>
                 <th>1</th>
                 <td>Candin</td>
+                <th>1</th>
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
-                <td>0</td>
+                <td>1</td>
                 <td>0</td>
                 <td>0</td>
               </tr>
               <tr>
                 <th>2</th>
                 <td>Max</td>
+                <th>0</th>
                 <td>0</td>
-                <td>0</td>
+                <td>1</td>
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>

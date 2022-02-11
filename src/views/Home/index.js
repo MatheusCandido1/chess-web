@@ -83,12 +83,13 @@ export default function Home() {
               </header>
               <div className="card-content">
                 <div className="content">
-                  <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
-
+                  <div style={{ display: 'flex', justifyContent: 'flex-start', flexWrap: 'wrap' }}>
                     {
                   games && games.length > 0
                     ? (
-                      <MatchCard />
+                      games.map((game) => (
+                        <MatchCard key={game.id} game={game} />
+                      ))
                     )
                     : (
                       <div className="notification">

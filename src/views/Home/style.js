@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   margin-top: 2rem;
   padding: 0 2rem;
+  margin-bottom: 2rem;
 
   .skeleton {
     width: 100%;
@@ -21,5 +22,7 @@ export const History = styled.section`
 
   .card {
     width: 100%;
+    height: 700px;
+    max-height: 1000px;
   }
 `;
