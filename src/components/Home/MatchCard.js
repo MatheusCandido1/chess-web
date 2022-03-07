@@ -65,7 +65,10 @@ export default function MatchCard({ game }) {
           <span className={`tag is-medium ${game.loser_color === 'white' ? 'is-light' : 'is-black'}`}>Perdedor: {game?.loser.name}</span>
         </section>
         <div className="panel-block">
-          <iframe title="1" src="https://lichess.org/embed/u7v51cqi#108?theme=auto&bg=auto" />
+          <iframe
+            title={game.play.split('/').pop()}
+            src={`https://lichess.org/embed/${game.play.split('/').pop()}#108?theme=auto&bg=auto`}
+          />
           <button onClick={() => window.open(game.play, '_blank')} type="button" className="button is-info is-fullwidth">
             <span>Ver Partida</span>
             <span className="icon is-small">

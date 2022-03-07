@@ -63,7 +63,7 @@ export default function ScoreboardCard() {
                 <td>Candin</td>
                 <th>1</th>
                 <td>0</td>
-                <td>0</td>
+                <td>1</td>
                 <td>0</td>
                 <td>1</td>
                 <td>0</td>
@@ -72,11 +72,11 @@ export default function ScoreboardCard() {
               <tr>
                 <th>2</th>
                 <td>Max</td>
-                <th>0</th>
+                <th>1</th>
                 <td>0</td>
                 <td>1</td>
                 <td>0</td>
-                <td>0</td>
+                <td>1</td>
                 <td>0</td>
                 <td>0</td>
               </tr>
