@@ -4,6 +4,8 @@ import propTypes from 'prop-types';
 import styled from 'styled-components';
 import Skeleton from 'react-loading-skeleton';
 
+import toast from 'react-hot-toast';
+
 const Container = styled.section`
   max-height: 325px;
 
@@ -19,13 +21,8 @@ const Content = styled.div`
   align-items: center;
   justify-content: center;
 
-  a {
-    margin-top: 1rem;
-    width: 100%;
-  }
-
   button {
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 100%;
     outline: 0;
     border: 0;
@@ -120,17 +117,18 @@ export default function NextMatchCard({ game }) {
               <span className="tag is-info">{game.schedule} (BRT)</span>
             </Schedule>
             <footer className="field is-grouped">
-              <a target="_blank" href={game.play} rel="noreferrer">
-                <button
-                  type="button"
-                  className="button is-info"
-                >
-                  <span>Jogar</span>
-                  <span className="icon is-small">
-                    <i className="fas fa-chess" />
-                  </span>
-                </button>
-              </a>
+              <button
+                type="button"
+                className="button is-info"
+                onClick={() => toast.success('This match is not ready. Try again later!', {
+                  icon: '🕐',
+                })}
+              >
+                <span>Jogar</span>
+                <span className="icon is-small">
+                  <i className="fas fa-chess" />
+                </span>
+              </button>
             </footer>
           </Content>
         </div>
